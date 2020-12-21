@@ -8,7 +8,7 @@ typedef Poco::Manifest<AbstractPlugin> PluginManifest;
 int main(int argc, char** argv)
 {
 		PluginLoader loader;
-		std::string libName("/home/shiqiang/apollo/with_apollo/test_poco/build/libPluginLibrary");  //full diretory
+		std::string libName("/home/shiqiang/apollo/with_apollo/test_poco/build/libPluginLibrary");  //full directory
 		libName += Poco::SharedLibrary::suffix(); // append .dll or .so
         // std::cout<<"lib: "<<libName<<std::endl;
 		loader.loadLibrary(libName);
